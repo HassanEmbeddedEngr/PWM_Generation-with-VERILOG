@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PWM_GENERATION.srcs/sources_1/new/Contro_Unit.v" \
+"../../../../PWM_GENERATION.srcs/sources_1/new/Data_PATH.v" \
+"../../../../PWM_GENERATION.srcs/sources_1/new/PWM_TOP.v" \
+"../../../../PWM_GENERATION.srcs/sim_1/new/PWM_TOP_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
